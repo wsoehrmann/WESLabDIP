@@ -8,6 +8,6 @@ package dip.lab3;
  *
  * @author Wesley
  */
-public class WriteMessageToConsole {
+public class ConsoleRendererStratagy {
     
 }

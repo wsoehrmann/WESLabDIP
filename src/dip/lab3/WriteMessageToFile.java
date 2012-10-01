@@ -8,6 +8,6 @@ package dip.lab3;
  *
  * @author Wesley
  */
-public class WriteMessageToFile {
+public class GUIRendererStratagy {
     
 }
