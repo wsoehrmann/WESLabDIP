@@ -9,17 +9,17 @@ package dip.lab3;
  * @author Wesley
  */
 public class MessageService {
+
     private MessageInputStratagy input;
     private MessageOutputStratagy output;
-    
-    public MessageService(MessageInputStratagy input,MessageOutputStratagy output){
-        
+
+    public MessageService(MessageInputStratagy input, MessageOutputStratagy output) {
+
         this.input = input;
-        this.output= output;
+        this.output = output;
     }
-    
+
     public void produceMessage() {
         output.sendMessage(input);
     }
-    
 }
