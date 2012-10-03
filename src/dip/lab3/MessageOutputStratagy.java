@@ -8,6 +8,7 @@ package dip.lab3;
  *
  * @author Wesley
  */
-public class ConsoleRendererStratagy {
+public interface MessageOutputStratagy {
+    public void sendMessage(final MessageInputStratagy msgInput);
     
 }

@@ -4,10 +4,15 @@
  */
 package dip.lab3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Wesley
  */
-public interface SendMessageStratagy {
+public class GuiOutputStratagy {
+    
+//    JOptionPane.showMessageDialog(null,"My Message");
+    
     
 }

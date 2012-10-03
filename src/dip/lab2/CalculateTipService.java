@@ -11,10 +11,19 @@ import dip.lab1.instructor.solution1.Employee;
  * @author wsoehrmann
  */
 public class CalculateTipService {
-    private TipStratagy tip;
 
-  public CalculateTipService(TipStratagy t) {
-        tip = t;
+    private TipCalculatorStratagy tipCalculatorStratagy;
+
+    /**
+     *
+     * @return
+     */
+    public double getTheTip() {
+        //return.tipCalculatorStratagy.getTip();
+        return 0;
     }
-    
+
+    public CalculateTipService(TipCalculatorStratagy TipCalculatorStratagy) {
+        this.tipCalculatorStratagy = TipCalculatorStratagy;
+    }
 }

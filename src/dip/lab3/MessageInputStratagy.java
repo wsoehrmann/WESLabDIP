@@ -8,6 +8,7 @@ package dip.lab3;
  *
  * @author Wesley
  */
-public interface ReceiveMessageStratagy {
-    
+public interface MessageInputStratagy {
+
+    public abstract Message getMessage();
 }

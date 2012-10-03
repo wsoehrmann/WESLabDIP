@@ -8,7 +8,7 @@ package dip.lab2;
  *
  * @author your name goes here
  */
-public class BaggageServiceTipCalculatorStratagy implements TipStratagy {
+public class BaggageServiceTipCalculatorStratagy implements TipCalculatorStratagy {
     //   /*private static final double MIN_BILL = 0.00;
     //    private static final double MAX_BILL = 100.00;
     //    private static final String BILL_ENTRY_ERR =
@@ -20,9 +20,7 @@ public class BaggageServiceTipCalculatorStratagy implements TipStratagy {
 
     private double baseTipPerBag;
     private int bagCount;
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
+    
     private ServiceQuality serviceQuality;
 
     public BaggageServiceTipCalculatorStratagy(ServiceQuality q, int bags) {

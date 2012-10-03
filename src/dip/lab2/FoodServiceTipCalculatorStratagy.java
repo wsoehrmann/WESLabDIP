@@ -8,7 +8,7 @@ package dip.lab2;
  *
  * @author your name goes here
  */
-public class FoodServiceTipCalculatorStratagy implements TipStratagy {
+public class FoodServiceTipCalculatorStratagy implements TipCalculatorStratagy {
 
     private static final double MIN_BILL = 0.00;
     private static final String BILL_ENTRY_ERR =
@@ -18,10 +18,7 @@ public class FoodServiceTipCalculatorStratagy implements TipStratagy {
     private static final double POOR_RATE = 0.10;
     private double bill;
 
-    public enum ServiceQuality {
-
-        GOOD, FAIR, POOR
-    }
+   
     private ServiceQuality serviceQuality;
 
     public FoodServiceTipCalculatorStratagy(ServiceQuality q, double billAmt) {
