@@ -4,8 +4,6 @@
  */
 package dip.lab3;
 
-import javax.sound.sampled.AudioInputStream;
-
 /**
  *
  * @author wsoehrmann
@@ -16,11 +14,6 @@ public class Message {
 
     public Message(String strMsg) {
         messageAsString = strMsg;
-    }
-
-    public Message(String strMsg, AudioInputStream soundStream) {
-
-        this.messageAsString = strMsg;
     }
 
     public String getMessageAsString() {

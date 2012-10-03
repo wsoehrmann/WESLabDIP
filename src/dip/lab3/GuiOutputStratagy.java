@@ -10,7 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author Wesley
  */
-public class GuiOutputStratagy {
+public class GuiOutputStratagy implements MessageOutputStratagy {
+    
+    
+    public void sendMessage(final MessageInputStratagy msgInput) {
+        Message msg = msgInput.getMessage();
+        JOptionPane.showMessageDialog(null, msg.getMessageAsString());
+    }
+    
     
 //    JOptionPane.showMessageDialog(null,"My Message");
     

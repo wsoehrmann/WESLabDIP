@@ -8,14 +8,18 @@ package dip.lab3;
  *
  * @author Wesley
  */
-public abstract class MessageService {
-    public abstract void ReceiveMessageStratagy();
-    public abstract void SendMessageStratagy();
+public class MessageService {
+    private MessageInputStratagy input;
+    private MessageOutputStratagy output;
     
     public MessageService(MessageInputStratagy input,MessageOutputStratagy output){
         
-     //   this.input = input;
-     //   this.output= output;
+        this.input = input;
+        this.output= output;
+    }
+    
+    public void produceMessage() {
+        output.sendMessage(input);
     }
     
 }

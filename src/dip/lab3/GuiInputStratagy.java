@@ -3,8 +3,8 @@
  * and open the template in the editor.
  */
 package dip.lab3;
-import javax.swing.JOptionPane;
 
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,14 +12,12 @@ import javax.swing.JOptionPane;
  */
 public class GuiInputStratagy implements MessageInputStratagy {
 
-   String response = JOptionPane.showInputDialog(null, "A Prompt, like enter message here:");
-
     public Message getMessage() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-    
-    }
-  
-    
-    
 
+        String rawmsg = JOptionPane.showInputDialog(null, "Enter message here:");
+
+        Message msg = new Message(rawmsg);
+        return msg;
+
+    }
+}
